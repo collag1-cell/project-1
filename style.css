@@ -1,0 +1,1768 @@
+* {
+    padding: 0%;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+body {
+    height: 1000px;
+    width: 1000px;
+    /* padding-top: 60px; */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    overflow: auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: #EC7FA9;
+    color: white;
+    top: 100%;
+
+}
+
+.line1 {
+    width: 0px;
+
+    /* width: 20px; */
+    height: 2px;
+    position: absolute;
+
+    background-color: #0011ff;
+    top: 70%;
+    right: 30%;
+    display: inline-block;
+
+}
+
+.nav-right .line1::after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #4D2FB2;
+    transition: 1s;
+    top: 70%;
+    right: 30%;
+}
+
+.line1:hover::after {
+    width: 100%;
+}
+
+/* ////////////////////////////////////////////////////////right is down here // */
+
+.nav-right li {
+    position: relative;
+    /* بالنسبه له علشان لو ضغط عليه يكون الأفتر بالنسبه لهههههههههه */
+    /* مهم جدًا */
+    list-style: none;
+    padding: 10px 0;
+}
+
+/* in after you make the line here dont make div line in html wrong wrong wrong you make it here  */
+.nav-right li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 3px;
+    transition: 1s;
+    width: 0;
+    /* يبدأ مخفي */
+    height: 3px;
+    background-color: #4D2FB2;
+}
+
+.nav-right li:hover::after {
+
+    width: 100%;
+}
+
+
+.blog1 {
+    position: relative;
+    /* مهم علشان القائمة تنزل صح */
+    display: inline-block;
+}
+
+.list {
+
+    position: absolute;
+
+    top: 40px;
+    right: 1%;
+    /* margin-left: 30px; not working?????*/
+    opacity: 0;
+    visibility: hidden;
+    background-color: #a156bc;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.blog1:hover ul {
+
+    visibility: visible;
+    opacity: 1;
+    /* opacity and visability  team with each other */
+
+}
+
+
+
+
+
+
+/* ////////////////////// */
+
+
+.di1 {
+
+    margin-right: 150px;
+
+}
+
+.di2 {
+
+    margin-right: 80px;
+
+}
+
+.di3 {
+
+    right: 30%;
+
+}
+
+.di4 {
+
+    right: 25%;
+
+}
+
+.di5 {
+
+    right: 20%;
+
+}
+
+.di6 {
+
+    right: 15%;
+
+}
+
+.di7 {
+
+    right: 11%;
+
+}
+
+.di8 {
+
+    right: 5%;
+
+}
+
+.nav-left input {
+    padding: 5px 10px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.text {
+
+    margin-top: 7px;
+
+}
+
+i {
+
+    width: 30px;
+    height: 30px;
+    z-index: 1000;
+}
+
+.bar {
+
+    width: 100%;
+    height: 60px;
+
+    position: relative;
+    position: fixed;
+    /* keeps it fixed relative to the viewport */
+    top: 0;
+    /* aligns it at the top */
+    left: 0;
+    /* start from the left */
+    width: 100%;
+    /* full width */
+
+    background-color: rgba(126, 62, 142, 0.702);
+    /* only background this will only affect this background*/
+
+    z-index: 10000;
+
+
+}
+
+.text1 {
+    display: inline-block;
+    z-index: 1000;
+
+}
+
+.fa-magnifying-glass {
+
+    position: absolute;
+
+    margin-left: 10px;
+    color: #000000;
+    margin-top: 5px;
+    z-index: 1000;
+
+}
+
+
+.nav-left {
+
+    display: inline-block;
+    margin-top: 12px;
+    margin-left: 12px;
+
+}
+
+.nav-right {
+
+    float: right;
+    margin-bottom: 69px;
+    margin-top: 20px;
+    margin-right: 30px;
+
+}
+
+.nav-right ul span {
+
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    margin-right: 26px;
+    cursor: pointer;
+}
+
+/* ///////////////////////////////////////1/////////////////////////////// */
+
+
+.hero {
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    /* 
+    border: 4px solid red; */
+}
+
+.hero h1 {
+
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    margin-top: 150px;
+
+
+
+}
+
+.hero p {
+    margin-top: 130px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+
+}
+
+.btngray {
+    background-color: #a68af4;
+    border-radius: 12px;
+    border: 2 solid black;
+    font-size: 30px;
+    padding: 12px;
+}
+
+.btngray:hover {
+
+    opacity: 0.6;
+
+}
+
+.btnblue:hover {
+
+    opacity: 0.6;
+
+}
+
+
+.btnblue {
+    background-color: rgb(127, 70, 224);
+    font-size: 30px;
+    border-radius: 12px;
+    /* border: 2 solid black; */
+    padding: 12px;
+    /* border-color: #633be5; */
+}
+
+/* ///////////////////////////////////////////////////1//////////////////////////////////////////////// */
+.container2 {
+
+    background-color: #f49ab2;
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+
+
+}
+
+.cards-container {
+
+    /* border: 2px solid red; */
+
+    height: 500px;
+    position: relative;
+    margin-top: 170px;
+}
+
+.card1 {
+
+    margin: 30 10 0 122;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+
+    border: 2px solid #4D2FB2;
+    position: absolute;
+
+
+
+}
+
+.card2 {
+
+    margin: 30 10 0 122;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+
+    border: 2px solid #4D2FB2;
+    position: absolute;
+    margin-left: 600px;
+
+
+
+}
+
+.card3 {
+
+    margin: 50 10 0 122;
+    width: 350px;
+    height: 250px;
+    text-align: center;
+
+    border: 2px solid #4D2FB2;
+    position: absolute;
+
+    margin-left: 1100px;
+
+
+
+}
+
+.h3-2 {
+
+
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.card-icon {
+
+    margin-top: 20px;
+    font-size: 40px;
+    color: #4D2FB2;
+
+}
+
+.p-2 {
+
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #4D2FB2;
+
+}
+
+.read-more {
+
+    font-size: 20px;
+    text-decoration: none;
+    color: #4D2FB2;
+
+
+
+}
+
+.Welcomeweb {
+
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-style: italic;z */
+}
+
+.underline {
+
+    width: 250px;
+    height: 6px;
+    background-color: black;
+    margin: auto;
+    margin-top: 13px;
+    margin-bottom: 12px;
+
+}
+
+
+
+.card1:hover .card-icon i {
+
+
+    color: black;
+
+
+}
+
+.card1:hover .p-2 {
+
+
+    color: rgb(255, 255, 255);
+
+
+}
+
+.card1:hover .read-more {
+
+
+    color: black;
+
+
+}
+
+.card2:hover .card-icon i {
+
+
+    color: black;
+
+
+}
+
+.card2:hover .p-2 {
+
+
+    color: rgb(255, 255, 255);
+
+
+}
+
+.card2:hover .read-more {
+
+
+    color: black;
+
+
+}
+
+.card3:hover .card-icon i {
+
+
+    color: black;
+
+
+}
+
+.card3:hover .p-2 {
+
+
+    color: rgb(255, 255, 255);
+
+
+}
+
+.card3:hover .read-more {
+
+
+    color: black;
+
+
+}
+
+.Welcomewebhh {
+
+    color: #ffffff;
+
+}
+
+/* //////////////////////////////counter3////////////////////////////////////// */
+
+
+
+.container3 {
+
+
+
+    background-color: #F6B1C3;
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+
+
+    /* 3 × 300 + margins */
+    margin: auto;
+
+
+
+}
+
+
+.underline3 {
+    width: 250px;
+    height: 6px;
+    background-color: #F1E7F3;
+    margin: auto;
+    margin-top: 13px;
+    margin-bottom: 12px;
+
+}
+
+
+
+.h3-3 {
+    color: #F1E7F3;
+    margin-left: 660px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.h3-2 {
+
+    color: whitesmoke;
+}
+
+
+.flower1div {
+
+
+
+    width: 400px;
+    height: 200px;
+
+    background-image: url(images/images1.jpg);
+    background-size: cover;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: azure;
+    float: left;
+    margin: 20px 15px;
+}
+
+.flower1div {
+    position: relative;
+    overflow: hidden;
+}
+
+.flower2div {
+
+
+
+    width: 400px;
+    height: 200px;
+
+    background-image: url(images/download2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: azure;
+    float: left;
+    margin: 20px 15px;
+    margin-left: 80px;
+}
+
+.flower2div {
+    position: relative;
+    overflow: hidden;
+}
+
+.flower3div {
+
+
+
+    width: 400px;
+    height: 200px;
+
+    background-image: url(images/download3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: azure;
+    float: left;
+    margin: 20px 15px;
+    margin-left: 80px;
+
+}
+
+.flower3div {
+    position: relative;
+    overflow: hidden;
+}
+
+.flower4div {
+
+
+
+    width: 400px;
+    height: 200px;
+
+    background-image: url(images/download4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: azure;
+    float: left;
+    float: left;
+    margin: 20px 15px;
+}
+
+.flower4div {
+    position: relative;
+    overflow: hidden;
+}
+
+.flower5div {
+
+
+
+    width: 400px;
+    height: 200px;
+
+    background-image: url(images/download5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: azure;
+    float: left;
+
+    margin: 20px 15px;
+    margin-left: 80px;
+}
+
+.flower5div {
+    position: relative;
+    overflow: hidden;
+}
+
+.flower6div {
+
+
+
+    width: 400px;
+    height: 200px;
+
+    background-image: url(images/download6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: azure;
+    float: left;
+    margin: 20px 15px;
+    margin-left: 70px;
+
+}
+
+.flower6div {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
+.CATEGORYh {
+
+    text-align: center;
+
+    color: rgb(209, 212, 212);
+    margin-top: 50px;
+}
+
+.CATEGORYp {
+
+    text-align: center;
+
+    color: rgb(209, 212, 212);
+
+    margin-top: 50px;
+}
+
+
+.fa-pinterest {
+
+
+    text-align: center;
+
+    color: rgb(209, 212, 212);
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+.fa-trophy {
+
+    margin: auto;
+    text-align: center;
+
+    color: rgb(209, 212, 212);
+    margin-left: 170px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    /* ده اللي يغمق الصورة */
+    opacity: 0;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
+
+.flower1div:hover .overlay {
+    opacity: 1;
+}
+
+.flower2div:hover .overlay {
+    opacity: 1;
+}
+
+.flower3div:hover .overlay {
+    opacity: 1;
+}
+
+.flower4div:hover .overlay {
+    opacity: 1;
+}
+
+.flower5div:hover .overlay {
+    opacity: 1;
+}
+
+.flower6div:hover .overlay {
+    opacity: 1;
+}
+
+/* ///////////////////////////////////////////container4/////////////////////////////////////////// */
+
+
+.container4 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #ffa7e6;
+    color: white;
+    overflow: hidden;
+}
+
+.Welcomeweb {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.underline {
+    width: 90px;
+    height: 4px;
+    background-color: #4a5cff;
+    margin: 10px auto;
+}
+
+.cards-container4 {
+    position: relative;
+    height: 700px;
+    margin-top: 40px;
+}
+
+/* ===== COMMON CARD ===== */
+.card {
+    width: 350px;
+    height: 230px;
+    position: absolute;
+    background-color: #cd74bf;
+    border: 1px solid #2d3cff;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+.cardre4 {
+    font-size: 40px;
+    color: #4a5cff;
+    margin-bottom: 15px;
+}
+
+/* ===== ROW 1 ===== */
+.card1 {
+    margin-top: 0;
+    margin-left: 100px;
+}
+
+.card2 {
+    margin-top: 0;
+    margin-left: 550px;
+}
+
+.card3 {
+    margin-top: 0;
+    margin-left: 1000px;
+}
+
+/* ===== ROW 2 ===== */
+.card4 {
+    margin-top: 280px;
+    margin-left: 100px;
+}
+
+.card5 {
+    margin-top: 280px;
+    margin-left: 550px;
+}
+
+.card6 {
+    margin-top: 280px;
+    margin-left: 1000px;
+}
+
+/* ===== HOVER ===== */
+.card:hover h3 {
+    color: rgb(255, 255, 255);
+}
+
+.card:hover p {
+    color: #0008ff;
+}
+
+.cards-container4 h3 {
+
+
+    color: #2d3cff;
+
+}
+
+/* //////////////////////////////////////////////////////// */
+.section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f59bb3;
+}
+
+/* LEFT TEXT */
+.text-content {
+    position: absolute;
+    font-size: 40px;
+    top: 120px;
+    left: 80px;
+    width: 40%;
+}
+
+.text-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.text-content .intro {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.text-content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.text-content li {
+    list-style: none;
+    margin-bottom: 15px;
+    font-size: 25px;
+    color: #ddd;
+}
+
+.text-content li i {
+    color: #4c6fff;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+
+/* RIGHT IMAGE */
+.image-content {
+    position: absolute;
+    top: 80px;
+    right: 120px;
+    width: 350px;
+}
+
+.image-content img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* DOTS */
+.dots {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.dots span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #3e3d3d;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+.dots .active {
+    background: #b22f8b;
+}
+
+.hovball:hover {
+
+    background-color: #b22f8b;
+
+
+}
+
+/* ///////////////////////////////1/2 ahlf/////////////////////// */
+.half {
+
+
+    overflow: hidden;
+
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+
+    background-image: url(images/50%.avif);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+
+
+
+.item {
+    text-align: center;
+    color: #4c023e;
+    margin-right: 8px;
+    margin-left: 260px;
+    font-size: 40px;
+    text-align: center;
+    float: left;
+    margin-top: 150px;
+    display: block;
+
+    width: 20px;
+}
+
+.phalf {
+
+    font-size: 30px;
+
+
+}
+
+.hafi {
+
+    margin-bottom: 30px;
+
+}
+
+/* ////////////subscribe photo//////////////////////////////// */
+
+
+.container6 {
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #f59bb3;
+}
+
+.title {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-size: 36px;
+    text-transform: lowercase;
+    margin-right: 80px;
+}
+
+.cont-card6 {
+    width: 300px;
+    height: 420px;
+    border: 1px solid #4D2FB2;
+    border-radius: 12px;
+    position: absolute;
+    top: 150px;
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.card66 {
+    left: 0;
+    margin-left: 86px;
+}
+
+.cont-card6 {
+    position: absolute;
+    overflow: hidden;
+}
+
+/* background overlay */
+.cont-card6::after {
+    content: "";
+    position: absolute;
+    /* after so use the for (it) absolute  */
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    /* width 100% for the whole left make it all from left to right */
+    height: 1px;
+    /* small bar */
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 1s;
+
+}
+
+/* hover fills card */
+.cont-card6:hover::after {
+    height: 100%;
+}
+
+.cont-card6:hover h2 {
+
+
+    color: #4D2FB2;
+
+}
+
+
+.cont-card6:hover .price-circle {
+
+    border: 2px solid #f74d7b;
+
+}
+
+
+
+.card666 {
+    left: 450px;
+    margin-left: 86px;
+}
+
+.card6666 {
+    left: 900px;
+    margin-left: 185px;
+}
+
+.cont-card6 h2 {
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.price-circle {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #4D2FB2;
+    border-radius: 50%;
+    margin: 0 auto 25px auto;
+    position: relative;
+}
+
+.price {
+    font-size: 32px;
+    position: absolute;
+    top: 30px;
+    left: 32px;
+}
+
+.unit {
+    font-size: 12px;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+}
+
+.cont-card6 p {
+    font-size: 14px;
+    margin: 12px 0;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #4D2FB2;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    border: 2px solid #4D2FB2;
+}
+
+/* /////////////////////////half2/////////////////////////////// */
+
+
+.half2 {
+
+
+    overflow: hidden;
+
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+
+    background-image: url(images/100%.avif);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+/* Common member styles */
+.member {
+    position: absolute;
+    top: 30%;
+
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.member img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.member h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.member span {
+    color: #651c65;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.member p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Positioning */
+.left {
+    left: 8%;
+}
+
+.right {
+    right: 8%;
+}
+
+/* ////////////////////////////////ourteam/////////////////////////// */
+
+/*  فهم  */
+
+.ourteam {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 60px;
+    overflow: hidden;
+    background-color: #FFAAB8;
+
+}
+
+.ourteam h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.line {
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #4D2FB2;
+    margin: 0 auto 60px auto;
+}
+
+
+
+
+.cardteam {
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+
+/* ===== COMMON CARD STYLE ===== */
+.ourteam1,
+.ourteam2,
+.ourteam3 {
+    position: absolute;
+    width: 320px;
+    height: 380px;
+    background-color: #FFD8DF;
+    border-radius: 12px;
+    padding: 20px;
+    background-position: bottom;
+}
+
+/* Card positions */
+.ourteam1 {
+    left: 8%;
+}
+
+.ourteam2 {
+    left: 38%;
+
+}
+
+.ourteam3 {
+    right: 9%;
+}
+
+/* ===== OVERLAY CONTENT ===== */
+.overlayour {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* ===== IMAGE AREA ===== */
+.pphoto {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background-color: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* Background images */
+.ourteam1 .pphoto {
+    background: url("images/man1.jpg") top/cover no-repeat;
+}
+
+.ourteam2 .pphoto {
+    background: url("images/man2.jpg")center/cover no-repeat;
+    width: 100%;
+    height: 70%;
+}
+
+.ourteam3 .pphoto {
+    background: url("images/man3.jpg") center/cover no-repeat;
+}
+
+/* ===== SOCIAL ICONS OVERLAY ===== */
+.pphoto .fa-facebook {
+    position: absolute;
+    right: 10px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #4D2FB2;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 12px;
+    visibility: hidden;
+
+
+}
+
+.team1:hover .pphoto .fa-facebook {
+
+
+    visibility: visible;
+
+}
+
+.team2:hover .pphoto .fa-facebook {
+
+
+    visibility: visible;
+
+}
+
+.team3:hover .pphoto .fa-facebook {
+
+
+    visibility: visible;
+
+}
+
+.team1::after {
+    content: "";
+    position: absolute;
+    /* after so use the for (it) absolute  */
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    /* width 100% for the whole left make it all from left to right */
+    height: 0px;
+    /* small bar */
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 1s;
+
+}
+
+/* اول ما اعمل هوفر يعمل امر الأفتر */
+.team1:hover::after {
+
+    height: 100%;
+
+
+
+}
+
+/* ده امر ال after */
+.team2::after {
+    content: "";
+    position: absolute;
+    /* after so use the for (it) absolute  */
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    /* width 100% for the whole left make it all from left to right */
+    height: 0px;
+    /* small bar */
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 1s;
+
+}
+
+/* اول ما اعمل هوفر يعمل امر الأفتر */
+.team2:hover::after {
+
+    height: 100%;
+
+
+
+}
+
+.team3::after {
+    content: "";
+    position: absolute;
+    /* after so use the for (it) absolute  */
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    /* width 100% for the whole left make it all from left to right */
+    height: 0px;
+    /* small bar */
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 1s;
+
+}
+
+/* اول ما اعمل هوفر يعمل امر الأفتر */
+.team3:hover::after {
+
+    height: 100%;
+
+
+
+}
+
+
+.pphoto .fa-square-instagram {
+    position: absolute;
+    right: 10px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #4D2FB2;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-top: 30px;
+
+    visibility: hidden;
+}
+
+/* add hover beside what you want to hover then add nested till you reach what you want to effect */
+.team1:hover .pphoto .fa-square-instagram {
+
+
+    visibility: visible;
+
+}
+
+.team2:hover .pphoto .fa-square-instagram {
+
+
+    visibility: visible;
+
+}
+
+.team3:hover .pphoto .fa-square-instagram {
+
+
+    visibility: visible;
+
+}
+
+
+
+
+
+
+
+.pphoto .fa-twitter {
+    position: absolute;
+    right: 10px;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #4D2FB2;
+    color: #fff;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 23px;
+    margin-top: 60px;
+    visibility: hidden;
+
+
+}
+
+
+
+.team1:hover .pphoto .fa-twitter {
+
+
+    visibility: visible;
+
+}
+
+.team2:hover .pphoto .fa-twitter {
+
+
+    visibility: visible;
+
+}
+
+.team3:hover .pphoto .fa-twitter {
+
+
+    visibility: visible;
+
+}
+
+/* hover p */
+
+.team1:hover .overlayour p {
+
+    color: #4D2FB2;
+
+}
+
+.team2:hover .overlayour p {
+
+    color: #4D2FB2;
+
+}
+
+.team3:hover .overlayour p {
+
+    color: #4D2FB2;
+
+}
+
+.team1:hover .pphoto .fa-twitter {
+
+
+    visibility: visible;
+
+}
+
+
+/* ===== TEXT ===== */
+.overlayour h3 {
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.overlayour p {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #c7b299;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* //////////////////////new////////////// */
+
+
+.news {
+
+
+    position: relative;
+
+    overflow: hidden;
+
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #2a2c2d; */
+    background-color: #f88ea7;
+
+
+}
+
+.newall {
+
+    position: absolute;
+    width: 320px;
+    height: 380px;
+    background-color: #FFD8DF;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.hn {
+
+    text-align: center;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.rp {
+
+    cursor: pointer;
+    text-align: center;
+    font-size: larger;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+
+.news1 {
+
+    left: 10%;
+}
+
+.news2 {
+
+
+
+    left: 40%;
+}
+
+.news3 {
+
+    left: 70%;
+
+}
+
+
+.pphoto {
+
+    background-image: url(images/man1.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    z-index: 1;
+    /* zindex so the hover dont affect the inner div or what you chose */
+
+}
+
+.overlaynew::after {
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    transition: 1s;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.pp {
+
+
+    text-transform: capitalize;
+
+}
+
+
+.overlaynew:hover::after {
+
+    height: 100%;
+
+
+}
+
+.overlaynew:hover .ahmed {
+
+    color: #0011ff;
+
+}
+
+.overlaynew:hover .pp {
+
+
+
+    color: #0011ff;
+}
+
+
+.ahmed {
+
+    text-transform: capitalize;
+
+}
+
+/* ///////////////////////////////////////final////////////////// */
+
+
+
+.final {
+
+    width: 100vw;
+    height: 50vh;
+    overflow: hidden;
+    background-color: #F6B1C3;
+
+}
+
+.final-photo {
+
+    background-image: url(images/ff.jpg);
+    width: 300px;
+    height: 250px;
+    margin: auto 30 auto 560;
+    background-position: center;
+    /* border: 2px solid red; */
+    background-size: cover;
+    margin-top: 20px;
+
+}
+
+.circle {
+
+    padding: 20px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 20px;
+    /* margin-left: 150px; */
+    border-radius: 35px;
+
+}
+
+.circlef {
+
+    margin-left: 390px;
+
+}
+
+.circle i {
+    width: 55px;
+    height: 55px;
+    background: #BE5985;
+    color: #fff;
+
+    display: inline-block;
+    margin: 0 6px;
+
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+
+    font-size: 36px;
+    text-decoration: none;
+}
+
+/* hover */
+.circle:hover i {
+    background-color: #FFB8E0;
+}
+
+.pf {
+
+    margin-left: 590px;
+
+}
